@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity_camera">
+
+    <LinearLayout
+        android:id="@+id/camera_photo"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/picture"
+
+            android:background="#66000000"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="matrix"
+            android:layout_gravity="center_horizontal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/camera_button"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/camera_photo">
+
+        <Button
+            android:id="@+id/back_button"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="60dp"
+            android:text="重新选图" />
+
+        <Button
+            android:id="@+id/transform"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="30dp"
+            android:textColor="#666666"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@id/back_button" />
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>
