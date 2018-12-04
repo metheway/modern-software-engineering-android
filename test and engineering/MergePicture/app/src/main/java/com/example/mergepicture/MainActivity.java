@@ -25,7 +25,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View v) {
-        Toast.makeText(MainActivity.this,"haha",Toast.LENGTH_SHORT).show();
         showBitmap = mergeThumbnailBitmap(backGround,secondBitmap);
 //        Drawable[] array = new Drawable[2];
 //        array[0] = new BitmapDrawable(backGround);
@@ -67,7 +66,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
            float w = firstBitmap.getWidth();
            float h = firstBitmap.getHeight();
 
-           m.setScale(0.5F * w / secondBitmap.getWidth(), 0.5F * h / secondBitmap.getHeight()
+           m.setScale(  w / secondBitmap.getWidth(),   h / secondBitmap.getHeight()
            ,20,20);
 
 
